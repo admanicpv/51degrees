@@ -20,7 +20,7 @@
 ********************************************************************** */
 
 #ifndef FIFTYONEDEGREES_NO_THREADING
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) && !defined(__MINGW32__) && !defined(__MINGW64__)
 
 #include <pthread.h>
 #include "threading.h"
